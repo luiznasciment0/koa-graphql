@@ -1,8 +1,7 @@
 const mongoose = require('mongoose')
-const uri = require('./dbconnection') //remote database uri connection
 
 const initDB = () => {
-  mongoose.connect(uri, { useNewUrlParser: true })
+  mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true })
 
   const db = mongoose.connection;
 

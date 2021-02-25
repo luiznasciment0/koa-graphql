@@ -1,10 +1,9 @@
 const Koa = require('koa')
 const graphqlHTTP = require('koa-graphql')
 const mount = require('koa-mount')
-
 const schema = require('./graphql/schema')
-
 const initDB = require('./database')
+require('dotenv').config()
 
 initDB()
 

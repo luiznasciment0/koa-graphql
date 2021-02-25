@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/luiznasciment0/koa-graphql#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "graphql": "^15.5.0",
     "koa": "^2.13.1",
     "koa-graphql": "^0.8.0",
