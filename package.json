@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "pm2 start server.js",
     "kill": "pm2 kill",
-    "serverlog": "pm2 logs"
+    "serverlog": "pm2 logs",
+    "prd": "pm2 init"
   },
   "repository": {
     "type": "git",

@@ -11,7 +11,7 @@ initDB()
 const app = new Koa()
 
 
-app.listen(9000)
+app.listen(process.env.PORT || 9000)
 
 app.use(mount('/graphql', graphqlHTTP({
   schema: schema,
