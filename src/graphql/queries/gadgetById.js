@@ -1,13 +1,13 @@
 const { GraphQLString } = require('graphql')
-const gadgetGraphQLType = require('../types/gadgetType')
-const Gadget = require('../../models/gadgets')
+const GadgetType = require('../../modules/gadget/GadgetType')
+const GadgetModel = require('../../modules/gadget/GadgetModel')
 
 module.exports = {
-  type: gadgetGraphQLType,
+  type: GadgetType,
   args: {
     id: { type: GraphQLString }
   },
   resolve(parent, args) {
-    return Gadget.findById(args.id)
+    return GadgetModel.findById(args.id)
   }
 }

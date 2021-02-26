@@ -2,7 +2,7 @@ const Koa = require('koa')
 const graphqlHTTP = require('koa-graphql')
 const cors = require('@koa/cors')
 const mount = require('koa-mount')
-const schema = require('./graphql/schema')
+const schema = require('./schema/schema')
 
 const app = new Koa()
 

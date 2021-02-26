@@ -1,10 +1,10 @@
 const { GraphQLList } = require('graphql')
-const gadgetGraphQLType = require('../types/gadgetType')
-const Gadget = require('../../models/gadgets')
+const GadgetType = require('../../modules/gadget/GadgetType')
+const GadgetModel = require('../../modules/gadget/GadgetModel')
 
 module.exports = {
-  type: new GraphQLList(gadgetGraphQLType),
+  type: new GraphQLList(GadgetType),
   resolve(parent, args) {
-    return Gadget.find({})
+    return GadgetModel.find({})
   }
 }
