@@ -3,8 +3,8 @@ const Schema = mongoose.Schema
 
 const GadgetSchema = new Schema({
   name: String,
-  release_date: Date,
-  by_company: String,
+  releaseDate: Date,
+  byCompany: String,
   price: Number,
 })
 

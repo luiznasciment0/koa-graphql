@@ -1,13 +1,13 @@
 const { GraphQLObjectType } = require('graphql')
 
-const queryAllGadgets = require('./queryAllGadgets')
-const queryGadgetById = require('./queryGadgetById')
+const gadgets = require('./gadgets')
+const gadgetById = require('./gadgetById')
 
 const RootQuery = new GraphQLObjectType({
-  name: 'RootQueryType',
+  name: 'RootQuery',
   fields: {
-    queryAllGadgets,
-    queryGadgetById,
+    gadgets,
+    gadgetById,
   }
 })
 
